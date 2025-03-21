@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Wereldreizen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Wereldreizen Logo" width="200" height="80">
+                <span class="logo-text">Wereldreizen</span>
+            </a>
+        </div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="has-submenu">
+                    <a href="bestemmingen.html">Bestemmingen</a>
+                    <ul class="submenu">
+                        <li><a href="europa.html">Europa</a></li>
+                        <li><a href="azie.html">Azië</a></li>
+                    </ul>
+                </li>
+                <li><a href="reistips.html">Reistips</a></li>
+                <li><a href="over-ons.html">Over ons</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="hamburger-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <div id="map" class="google-map"></div>
+
+        <section class="contact-content">
+            <h1>Neem contact met ons op</h1>
+
+            <div class="contact-info">
+                <article>
+                    <h2>Bezoek ons</h2>
+                    <p>Reisbureau Wereldreizen<br>
+                        Damstraat 21<br>
+                        1012 JS Amsterdam</p>
+                    <p>Openingstijden:<br>
+                        Ma-Vr: 9:00 - 18:00<br>
+                        Za: 10:00 - 17:00<br>
+                        Zo: Gesloten</p>
+                </article>
+
+                <article>
+                    <h2>Bel of mail ons</h2>
+                    <p>Telefoon: +31 (0)20 123 4567</p>
+                    <p>Email: info@wereldreizen.nl</p>
+                    <p>Voor dringende zaken buiten kantooruren:<br>
+                        Noodnummer: +31 (0)6 987 654 32</p>
+                </article>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>Stuur ons een bericht</h2>
+                <p>Vul onderstaand formulier in en we nemen zo snel mogelijk contact met je op.</p>
+
+                <form class="contact-form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                    <div class="form-group">
+                        <label for="name">Naam *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefoonnummer</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Onderwerp</label>
+                        <select id="subject" name="subject">
+                            <option value="info">Algemene informatie</option>
+                            <option value="booking">Boeking</option>
+                            <option value="complaint">Klacht</option>
+                            <option value="other">Anders</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Bericht *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="newsletter" id="newsletter">
+                            <span class="checkmark"></span>
+                            Ik wil me aanmelden voor de nieuwsbrief
+                        </label>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <button type="submit" class="btn submit-btn">Verstuur</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo-small.png" alt="Wereldreizen Logo" width="80" height="80">
+                <p>Wereldreizen</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: info@wereldreizen.nl</p>
+                <p>Tel: +31 (0)20 123 4567</p>
+            </div>
+            <div class="footer-social">
+                <h4>Volg ons</h4>
+                <ul>
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacybeleid</a></li>
+                    <li><a href="voorwaarden.html">Algemene voorwaarden</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Wereldreizen. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script>
+        function initMap() {
+            // Coördinaten van Amsterdam centrum
+            const amsterdam = { lat: 52.3676, lng: 4.9041 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 13,
+                center: amsterdam,
+            });
+
+            // Marker voor het kantoor
+            const marker = new google.maps.Marker({
+                position: { lat: 52.3702, lng: 4.8952 },
+                map: map,
+                title: "Wereldreizen Kantoor",
+            });
+        }
+    </script>
+</body>
+
+</html>
